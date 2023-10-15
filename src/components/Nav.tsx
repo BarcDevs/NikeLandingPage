@@ -3,6 +3,13 @@ import {headerLogo} from '../assets/images'
 // @ts-ignore
 import {hamburger} from '../assets/icons'
 import {navLinks} from '../constants'
+import {
+    Menubar,
+    MenubarContent,
+    MenubarItem,
+    MenubarMenu,
+    MenubarTrigger
+} from './ui/menubar.tsx'
 
 const Nav = ({}) => {
     return (
@@ -30,15 +37,31 @@ const Nav = ({}) => {
                     ))}
                 </ul>
 
-                {/*TODO: add functionality*/}
-                <div className={'lg:hidden'}>
-                    <img
-                        src={hamburger}
-                        alt="menu"
-                        width={25}
-                        height={25}
-                    />
-                </div>
+                <Menubar className={'border-none lg:hidden'}>
+                    <MenubarMenu>
+                        <MenubarTrigger>
+                            <img
+                                src={hamburger}
+                                alt="menu"
+                                width={25}
+                                height={25}
+                            />
+                        </MenubarTrigger>
+                        {/*TODO better styling*/}
+                        <MenubarContent>
+                            {navLinks.map(item => (
+                                <MenubarItem key={item.label}>
+                                    <a
+                                        href={item.href}
+                                        className={'font-montserrat text-lg leading-normal text-slate-gray'}
+                                    >
+                                        {item.label}
+                                    </a>
+                                </MenubarItem>
+                            ))}
+                        </MenubarContent>
+                    </MenubarMenu>
+                </Menubar>
             </nav>
         </header>
     )
