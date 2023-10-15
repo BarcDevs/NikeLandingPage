@@ -21,6 +21,7 @@ module.exports = {
     "react/prop-types": 0,
     'no-empty-pattern': 0,
     'tailwindcss/no-custom-classname': 0,
+    'no-unused-vars': 'warn',
   },
   parser: '@typescript-eslint/parser'
 }
