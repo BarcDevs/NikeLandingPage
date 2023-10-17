@@ -24,6 +24,25 @@ const Hero = ({}) => {
                     </span> Shoes
                 </h1>
 
+                <p className={'mb-14 mt-6 font-montserrat text-lg leading-8 text-slate-gray sm:max-w-sm'}>
+                    Discover stylish Nike arrivals , quality, comfort and innovation for your active lifestyle.
+                </p>
+
+                <Button
+                    label={'Shop Now'}
+                    iconUrl={arrowRight}
+                    onClick={() => {
+                    }}
+                />
+
+                <div className="mt-20 flex w-full flex-wrap items-start justify-start gap-16">
+                    {statistics.map(stat => (
+                        <div key={stat.label}>
+                            <p className={'font-palanquin text-4xl font-bold'}>{stat.value}</p>
+                            <p className={'font-montserrat leading-7 text-slate-gray'}>{stat.label}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )
