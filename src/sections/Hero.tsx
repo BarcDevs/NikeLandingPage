@@ -1,6 +1,8 @@
 import Button from '../components/Button.tsx'
 // @ts-ignore
 import {arrowRight} from '../assets/icons'
+// @ts-ignore
+import {bigShoe1} from '../assets/images'
 import {statistics} from '../constants'
 
 const Hero = ({}) => {
@@ -43,6 +45,17 @@ const Hero = ({}) => {
                         </div>
                     ))}
                 </div>
+            </div>
+
+            <div
+                className="relative flex flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
+                <img
+                    src={bigShoe1}
+                    alt="shoe collection"
+                    width={610}
+                    height={500}
+                    className={'relative z-10 object-contain'}
+                />
             </div>
         </section>
     )
