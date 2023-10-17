@@ -1,6 +1,4 @@
-// @ts-ignore
 import {facebook, instagram, shieldTick, support, truckFast, twitter} from "../assets/icons"
-// @ts-ignore
 import {
     bigShoe1,
     bigShoe2,
@@ -15,15 +13,16 @@ import {
     thumbnailShoe2,
     thumbnailShoe3
 } from "../assets/images"
+import {FooterLink, NavLink, Product, Review, Service, Shoe, Statistic} from '../types'
 
-export const navLinks = [
+export const navLinks: NavLink[] = [
     {href: "#home", label: "Home"},
     {href: "#about-us", label: "About Us"},
     {href: "#products", label: "Products"},
     {href: "#contact-us", label: "Contact Us"}
 ]
 
-export const shoes = [
+export const shoes: Shoe[] = [
     {
         thumbnail: thumbnailShoe1,
         bigShoe: bigShoe1
@@ -38,13 +37,13 @@ export const shoes = [
     }
 ]
 
-export const statistics = [
+export const statistics: Statistic[] = [
     {value: '1k+', label: 'Brands'},
     {value: '500+', label: 'Shops'},
     {value: '250k+', label: 'Customers'}
 ]
 
-export const products = [
+export const products: Product[] = [
     {
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
@@ -67,7 +66,7 @@ export const products = [
     }
 ]
 
-export const services = [
+export const services: Service[] = [
     {
         imgURL: truckFast,
         label: "Free shipping",
@@ -85,7 +84,7 @@ export const services = [
     }
 ]
 
-export const reviews = [
+export const reviews: Review[] = [
     {
         imgURL: customer1,
         customerName: 'Morich Brown',
@@ -101,33 +100,33 @@ export const reviews = [
 ]
 
 
-export const footerLinks = [
+export const footerLinks: FooterLink[] = [
     {
         title: "Products",
         links: [
-            {name: "Air Force 1", link: "/"},
-            {name: "Air Max 1", link: "/"},
-            {name: "Air Jordan 1", link: "/"},
-            {name: "Air Force 2", link: "/"},
-            {name: "Nike Waffle Racer", link: "/"},
-            {name: "Nike Cortez", link: "/"}
+            {name: "Air Force 1", href: "/"},
+            {name: "Air Max 1", href: "/"},
+            {name: "Air Jordan 1", href: "/"},
+            {name: "Air Force 2", href: "/"},
+            {name: "Nike Waffle Racer", href: "/"},
+            {name: "Nike Cortez", href: "/"}
         ]
     },
     {
         title: "Help",
         links: [
-            {name: "About us", link: "/"},
-            {name: "FAQs", link: "/"},
-            {name: "How it works", link: "/"},
-            {name: "Privacy policy", link: "/"},
-            {name: "Payment policy", link: "/"}
+            {name: "About us", href: "/"},
+            {name: "FAQs", href: "/"},
+            {name: "How it works", href: "/"},
+            {name: "Privacy policy", href: "/"},
+            {name: "Payment policy", href: "/"}
         ]
     },
     {
         title: "Get in touch",
         links: [
-            {name: "customer@nike.com", link: "mailto:customer@nike.com"},
-            {name: "+92554862354", link: "tel:+92554862354"}
+            {name: "customer@nike.com", href: "mailto:customer@nike.com"},
+            {name: "+92554862354", href: "tel:+92554862354"}
         ]
     }
 ]

@@ -1,6 +1,4 @@
-// @ts-ignore
 import {headerLogo} from '../assets/images'
-// @ts-ignore
 import {hamburger} from '../assets/icons'
 import {navLinks} from '../constants'
 import {

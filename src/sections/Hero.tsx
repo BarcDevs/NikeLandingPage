@@ -1,7 +1,5 @@
 import Button from '../components/Button.tsx'
-// @ts-ignore
 import {arrowRight} from '../assets/icons'
-// @ts-ignore
 import {bigShoe1} from '../assets/images'
 import {statistics} from '../constants'
 
