@@ -1,6 +1,6 @@
 type ButtonProps = {
     label: string
-    iconUrl: string
+    iconUrl?: string
     onClick: () => void
 }
 
@@ -12,7 +12,7 @@ const Button = ({label, iconUrl, onClick}: ButtonProps) => {
         >
             {label}
 
-            {<img
+            {iconUrl && <img
                 src={iconUrl}
                 alt={label}
                 className={'ml-2 h-5 w-5 rounded-full'}
