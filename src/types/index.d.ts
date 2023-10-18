@@ -26,7 +26,8 @@ export type Statistic = {
 export type Product = {
     imgURL: string,
     name: string,
-    price: string
+    price: string,
+    rating: number
 }
 
 export type Service = {
