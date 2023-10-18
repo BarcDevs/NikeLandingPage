@@ -1,4 +1,5 @@
 export type Shoe = {
+    name: string,
     thumbnail: string,
     bigShoe: string
 }
