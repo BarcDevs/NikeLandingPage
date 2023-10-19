@@ -1,5 +1,5 @@
 import {products} from '../constants'
-import PopularProductCard from '../components/PopularProductCard.tsx'
+import PopularProductCard from '../components/cards/PopularProductCard.tsx'
 
 const PopularProducts = ({}) => {
     return (

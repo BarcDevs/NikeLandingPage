@@ -1,4 +1,4 @@
-import {Shoe} from '../types'
+import {Shoe} from '../../types'
 import {MouseEvent} from 'react'
 
 type ShoeCardProps = {

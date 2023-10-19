@@ -1,7 +1,7 @@
 import Button from '../components/Button.tsx'
 import {arrowRight} from '../assets/icons'
 import {shoes, statistics} from '../constants'
-import ShoeCard from '../components/ShoeCard.tsx'
+import ShoeCard from '../components/cards/ShoeCard.tsx'
 import {useState} from 'react'
 import {Shoe} from '../types'
 
