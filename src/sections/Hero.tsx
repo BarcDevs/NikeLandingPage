@@ -54,7 +54,7 @@ const Hero = ({}) => {
             </section>
 
             <section
-                className="relative flex flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
+                className="flex-center relative flex-1 bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
                 <img
                     src={currentShoeDisplayed.bigShoe}
                     alt="shoe collection"

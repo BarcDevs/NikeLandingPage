@@ -23,7 +23,7 @@ const ShoeCard = ({shoe, changeBigShoe, currentShoeDisplayed}: ShoeCardProps) =>
             onClick={handleClick}
         >
             <div
-                className={' flex items-center justify-center rounded-xl bg-card bg-cover bg-center max-sm:p-4 sm:h-40 sm:w-40'}>
+                className={'flex-center rounded-xl bg-card bg-cover bg-center max-sm:p-4 sm:h-40 sm:w-40'}>
                 <img
                     src={shoe.thumbnail}
                     alt="shoe collection"
