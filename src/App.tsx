@@ -42,9 +42,9 @@ const App = ({}) => (
             <Subscribe/>
         </section>
 
-        <footer className="padding-x padding-t bg-black pb-8">
+        <section className="padding-x padding-t bg-black pb-8">
             <Footer/>
-        </footer>
+        </section>
 
     </main>
 )
