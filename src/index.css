@@ -55,4 +55,16 @@
     .info-text {
         @apply font-montserrat text-slate-gray text-lg leading-7;
     }
+
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .flex-center-row {
+        @apply flex items-center justify-center flex-row;
+    }
+
+    .flex-center-col {
+        @apply flex items-center justify-center flex-col;
+    }
 }
